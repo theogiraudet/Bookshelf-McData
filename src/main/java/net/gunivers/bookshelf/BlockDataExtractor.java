@@ -19,12 +19,12 @@ public class BlockDataExtractor {
     public static void generateBlockSounds(String path, String fileName) throws IOException {
         System.out.println("Generating block data...");
         Files.createDirectories(Path.of(path));
-        JsonObject blockSounds = extractBlocksSounds();
+        JsonObject blockSounds = extractBlocksData();
         writeJsonToFile(path + fileName + ".json", blockSounds, true);
         writeJsonToFile(path + fileName + ".min.json", blockSounds, false);
     }
 
-    private static JsonObject extractBlocksSounds() {
+    private static JsonObject extractBlocksData() {
         JsonObject blocksJson = new JsonObject();
         for (Field blockField : Blocks.class.getFields()) {
             try {
