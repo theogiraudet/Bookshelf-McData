@@ -11,7 +11,7 @@ You can view the extracted block shapes for a specific version by accessing the 
 https://raw.githubusercontent.com/mcbookshelf/Bookshelf-McData/<version>/blocks/shapes.min.json
 ```
 
-Concerning the block data, before 1.21.1 only sounds are available:
+Concerning the block data, before 1.21.5 only sounds are available:
 
 ```
 https://raw.githubusercontent.com/Gunivers/Bookshelf-McData/<version>/blocks/sounds.min.json
