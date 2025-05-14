@@ -7,7 +7,7 @@ import com.google.gson.GsonBuilder;
 import java.io.FileWriter;
 import net.minecraft.data.Main;
 import static net.gunivers.bookshelf.HitboxExtractor.generateBlockShapes;
-import static net.gunivers.bookshelf.SoundExtractor.generateBlockSounds;
+import static net.gunivers.bookshelf.BlockDataExtractor.generateBlockSounds;
 
 public class Extractor {
 
@@ -26,7 +26,7 @@ public class Extractor {
         }
 
         generateBlockShapes("generated/" + args[0] + "/blocks/", "shapes");
-        generateBlockSounds("generated/" + args[0] + "/blocks/", "sounds");
+        generateBlockSounds("generated/" + args[0] + "/blocks/", "data");
     }
 
     /**
